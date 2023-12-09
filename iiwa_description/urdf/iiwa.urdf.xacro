@@ -3,7 +3,7 @@
 
   <xacro:macro name="iiwa" params="parent prefix *origin">
 
-  <material name="gray">
+  <material name="${prefix}gray">
     <color rgba="0.5 0.5 0.5 1.0"/>
   </material>
 
@@ -157,7 +157,7 @@
   <link name="${prefix}link_7">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0.07"/>
-        <material name="gray"/>
+        <material name="${prefix}gray"/>
         <geometry>
           <mesh filename="package://iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_7_2.stl" scale ="0.001 0.001 0.001"/>
         </geometry>
